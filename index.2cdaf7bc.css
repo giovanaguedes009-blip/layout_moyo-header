@@ -1,0 +1,86 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+:root {
+  --color-primary: #00acdc;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+.header {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo__image {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.nav__list {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  color: #000;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.nav__link:hover, .nav__link.is-active {
+  color: var(--color-primary);
+}
+
+.nav__link.is-active:after {
+  content: "";
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
